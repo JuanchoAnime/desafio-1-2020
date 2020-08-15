@@ -102,7 +102,7 @@ changeModel(initialCredentials)
   .then((res) => {
     if (res.err === true) {
       console.log(res);
-      console.error('ERROR - invalid initial credentials provided.');
+      console.error(initialCredentials);
     } else {
       currentModel = res.model;
       currentCredentials = res.credentials;
